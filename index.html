@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <title>Proyecto final Piedra, Papel o Tijera</title>
+</head>
+<body>
+    
+<!--section login-->
+<section id="section-login" class="content-brand patters">
+    <img src="img/brand-orange.png" alt="marca juego">
+    
+    <div class="content-login">
+        <div class="wrapper">
+            <div class="container">
+                <p><strong>usuario:</strong> user</p>
+                <p><strong>contraseña:</strong> pass</p>
+                <!-- <h1>Bienvenido</h1> -->
+                <form class="form">
+                    <input id="user-name" type="text" placeholder="Usuario" required="required">
+                    <input id="password" type="password" placeholder="Contraseña" required="required">
+                    <button id="login" type="button" onclick="validateLogin()">Ingresar</button>
+                </form>
+            </div>
+    </div>
+</section>
+<!--/section login-->
+
+<!--section play-->
+<div id="section-play" class="pattern-play">
+    <header>
+        <section class="box-logo">
+            <a href="#"><img src="./img/brand-orange.png" alt=""></a>            
+        </section>
+
+        <section class="box-result">
+            <p>Resultado:</p>
+            <h2 id="star-text">Comenzar 🦖</h2> 
+
+            <div class="box-point">
+                <p id="result-user">0</p>
+                <p id="consola-ronda">0</p>
+                <p id="result-ia">0</p>
+            </div>
+        </section>
+        
+        <section class="box-score">
+            <button class="btn-point">
+                <a href="#modal">Puntuación <i class="im im-trophy"></i></a>
+            </button>
+
+            <section id="modal" class="modal">
+                <div class="modal-container">
+                    <h2>En construcción 👨🏻‍💻</h2>
+                    
+                    <a href="#box-logo">Cerrar</a>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    
+    <div class="section-box">    
+        <div class="section-hand">
+            
+            <!--box user-->
+            <div class="content-user">
+                <div class="box-user">
+                    
+                    <!--imagen inicio de juego-->
+                    <img class="floating" id="img-user" src="./img/icon-user.png" alt="">
+
+                    <div id="group-btn">
+                        <button id="rock" type="button">
+                            <img src="./img/rock.svg" alt="">
+                        </button>
+            
+                        <button id="paper" type="button">
+                            <img src="./img/paper.svg" alt="">
+                        </button>
+            
+                        <button id="scissor" type="button">
+                            <img src="./img/scissor.svg" alt="">
+                        </button>
+                    </div>
+                
+                </div>
+            </div>
+
+            
+            <!--box user-->
+            <div class="content-ia">
+                <div class="box-ia">
+                    
+                    <!--imagen inicio de juego-->
+                    <img class="floating" id="img-ia" src="./img/icon-ia.png" alt="">  
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--/section play-->
+
+<!--footer-->
+<footer >
+    <p>Diseño y desarrollo <strong>Felipe San Martín G</strong> 🦖</p>
+</footer>
+<!--/footer-->
+
+
+<script src="js/app.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
